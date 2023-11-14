@@ -13,3 +13,4 @@ The AI-Persona Audio Generator is a project aimed at revolutionizing the way we 
 The intended users of the AI-Persona Audio Generator are individuals who seek a personalized auditory experience, such as listening to books or documents in a familiar voice. Pre-requisites for users include the ability to provide clear voice recordings for the initial training phase.
 
 Stakeholders for this project include the me, potential investors, and the end-users who stand to benefit from a more personalized audio experience.
+.

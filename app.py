@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Define a route to read text aloud
 @app.route('/read_aloud', methods=['POST'])
-def read_text_aloud():
+def read_text_aloud(text, voice_model_folder_path):
     """
     Receives a text from the client and generates audio from it.
     

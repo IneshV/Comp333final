@@ -1,7 +1,7 @@
 # AI-Persona Audio Generator
 
 ## Overview
-The AI-Persona Audio Generator is a project aimed at revolutionizing the way we interact with readings. This project allows for the generation of audio that mimics the voice of a specific individual, based on training with audio recordings. My goal is to first establish a robust and accurate voice-generation platform, before extending its functionality to reading PDFs. Finally, we aim to implement this on a website and, if time allows, an iOS mobile application.
+The AI-Persona Audio Generator is a project aimed at revolutionizing the way we interact with readings. This project allows for the generation of audio that mimics the voice of a specific individual, based on training with audio recordings. Our goal is to first establish an accurate voice generator, before extending its functionality to reading PDFs. Finally, we aim to implement this on a website and, if time allows, an iOS mobile application.
 
 ## Proposed Features
 - **Voice Cloning Engine**: Implement a deep learning model capable of analyzing and replicating a person's voice with a small sample size.

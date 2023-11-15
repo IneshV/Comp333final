@@ -48,3 +48,29 @@ function handleFileUpload(event) {
 
 // Attach the handleFileUpload function to the form's submit event
 document.getElementById('upload-form').addEventListener('submit', handleFileUpload);
+
+
+// Define a function to read text aloud
+function readAloud(textToRead) {
+    /*
+    Sends a request to the server to read the provided text aloud.
+
+    - Constructs a JSON object with the text to read.
+    - Sends a POST request to the server with the text.
+    - Plays the generated audio on successful response.
+    */
+    // Implement this function
+}
+
+// Attach event listener to the "Read" button
+document.getElementById('read-button').addEventListener('click', () => {
+    /*
+    Handles the click event of the "Read" button.
+
+    - Retrieves the text to read from the input field.
+    - Calls the readAloud function to read the text.
+    - Displays an alert if the text is empty.
+    */
+    // Implement this event listener
+});
+

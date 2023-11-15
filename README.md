@@ -14,3 +14,4 @@ The intended users of the AI-Persona Audio Generator are individuals who seek a 
 
 Stakeholders for this project include the me, potential investors, and the end-users who stand to benefit from a more personalized audio experience.
 .
+Directions: https://docs.google.com/document/d/1sD2568NL3eg5ahroym_EfvxkNEWJ27UVJuxUzeKo35c/edit?usp=sharing

@@ -3,17 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload and Display PDF</title>
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <h1>Upload and Display PDF</h1>
-    
-    <form id="upload-form">
-        <input type="file" id="pdf-file" accept=".pdf" />
-        <button type="submit">Upload PDF</button>
-    </form>
+    <div class="sidebar">
+        <div class="navigation">
+            <h2>Sections</h2>
+            <!-- List of sections -->
+            <ul id="section-list">
+                <!-- Populate this list dynamically with JavaScript -->
+            </ul>
+        </div>
+        <div class="controls">
+            <h2>Controls</h2>
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="fast-backward">Fast Backward</button>
+            <button id="fast-forward">Fast Forward</button>
+            <button id="select-text">Select Text</button>
+        </div>
+        <div class="selected-text">
+            <h2>Selected Text</h2>
+            <p id="selected-text2"></p>
+        </div>
+        
+        </div>
+    </div>
 
-    <div id="pdf-display"></div>
+    <div class="content">
+        <h1>PDF Viewer</h1>
+        <!-- Your existing PDF display content -->
+        <form id="upload-form">
+            <label for="pdf-file" style="cursor: pointer;">
+                Choose a PDF file to upload
+            </label>
+            <input type="file" id="pdf-file" accept=".pdf" />
+            <button type="submit">Upload PDF</button>
+        </form>
+        <div id="pdf-display"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>

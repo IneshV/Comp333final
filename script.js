@@ -46,31 +46,41 @@ function handleFileUpload(event) {
     reader.readAsArrayBuffer(file);
 }
 
-// Attach the handleFileUpload function to the form's submit event
-document.getElementById('upload-form').addEventListener('submit', handleFileUpload);
+// Function to get selected text within the PDF content
+function getSelectedText() {
+    const iframe = document.querySelector("#pdf-display iframe");
+    const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
 
+    const selectedText = iframeDocument.getSelection().toString();
 
-// Define a function to read text aloud
-function readAloud(textToRead) {
-    /*
-    Sends a request to the server to read the provided text aloud.
-
-    - Constructs a JSON object with the text to read.
-    - Sends a POST request to the server with the text.
-    - Plays the generated audio on successful response.
-    */
-    // Implement this function
+    return selectedText;
 }
 
-// Attach event listener to the "Read" button
-document.getElementById('read-button').addEventListener('click', () => {
-    /*
-    Handles the click event of the "Read" button.
+// Function to get text from the currently displayed PDF page
+function getTextFromPDF() {
+    const iframe = document.querySelector("#pdf-display iframe");
+    const pdfWindow = iframe.contentWindow;
 
-    - Retrieves the text to read from the input field.
-    - Calls the readAloud function to read the text.
-    - Displays an alert if the text is empty.
-    */
-    // Implement this event listener
+    pdfWindow.getSelection().removeAllRanges();
+    pdfWindow.PDFViewerApplication.pdfViewer.getSelectionText().then(selectedText => {
+        if (!selectedText.trim()) {
+            alert("No text was selected within the PDF.");
+            return; // Exit the function if no text is selected
+        }
+
+        updateSelectedTextInSidebar(selectedText);
+    }).catch(err => {
+        console.error('Error fetching selected text:', err);
+        alert('An error occurred while retrieving selected text.');
+    });
+}
+
+// Event listener for "Select Text" button
+document.getElementById("select-text").addEventListener("click", () => {
+    getTextFromPDF();
 });
 
+// ... (previous code)
+
+// Attach the handleFileUpload function to the form's submit event
+document.getElementById('upload-form').addEventListener('submit', handleFileUpload);

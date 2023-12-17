@@ -14,7 +14,7 @@ The intended users of the AI-Persona Audio Generator are individuals who seek a 
 
 Stakeholders for this project include me, potential investors, and the end-users who stand to benefit from a more personalized audio experience.
 
-## Additional Notes:
+## Additional Notes
 **Web app must be run in Google Chrome.**
 
 Due to the heavy computational costs of generating voice samples, you cannot run our program locally. However, we utilized Google Colab's remote servers with a flask back end to get around this. This allows for us to use Google's GPUs for generating.
@@ -23,10 +23,10 @@ Further, this repository includes a folder called extra files; These files are w
 
 ## How to run the project
 
-**must be run in Google Chrome.**
+**Link must be opened in Google Chrome.**
 
-Follow the directions in this link:
-    [https://colab.research.google.com/drive/1tizUgtVcLpn8lttYHPhnofAzaL4YGRW5?usp=sharing]
+Follow the directions in this link:  
+{https://colab.research.google.com/drive/1tizUgtVcLpn8lttYHPhnofAzaL4YGRW5?usp=sharing}  
 Further direction are within the notebook
 
 ## Future Goals

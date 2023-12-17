@@ -21,6 +21,8 @@ Due to the heavy computational costs of generating voice samples, you cannot run
 
 Further, this repository includes a folder called extra files; These files are what we had been using originally but, since our AI voice generation is done through are using to colab are now outdated. We chose to include them as they were key in our learning process, though are not needed in order to run the website. Hence, they are neatly hidden away in this folder.
 
+**A sample pdf, (sample.pdf), is provided** 
+
 ## How to run the project
 
 **Link must be opened in Google Chrome.**

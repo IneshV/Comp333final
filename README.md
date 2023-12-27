@@ -7,7 +7,6 @@ The AI-Persona Audio Generator is a project aimed at revolutionizing the way we 
 - **Voice Cloning Engine**: Implement a deep learning model capable of analyzing and replicating a person's voice with a small sample size.
 - **PDF Reading Capability**: Integrate the voice cloning engine to convert text from PDFs into spoken audio, maintaining the original speaker's voice characteristics.
 - **Web Platform**: Develop a user-friendly website that allows users to upload voice samples and PDFs, and receive audio outputs.
-- **iOS Application**: If project scope and time permit, create an iOS app to provide mobile access to our services.
 
 ## Stakeholders and Intended Users
 The intended users of the AI-Persona Audio Generator are individuals who seek a personalized auditory experience, such as listening to books or documents in a familiar voice. Pre-requisites for users include the ability to provide clear voice recordings for the initial training phase.
@@ -30,6 +29,9 @@ Further, this repository includes a folder called extra files; These files are w
 Follow the directions in this link to access the website:  
 {https://colab.research.google.com/drive/1tizUgtVcLpn8lttYHPhnofAzaL4YGRW5?usp=sharing}  
 Further direction are within the notebook
+
+Demo Video:
+https://drive.google.com/file/d/1a1QoCtQehWSnlV5C5fvIQI6Z835om1as/view
 
 Once the website is brought up, in the top right corner you can toggle between the voice training function and PDF reader feature.
 
